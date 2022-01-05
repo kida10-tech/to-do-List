@@ -1,6 +1,5 @@
 package com.todo.list.model.entity;
 
-import com.todo.list.model.entity.AuditableEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
