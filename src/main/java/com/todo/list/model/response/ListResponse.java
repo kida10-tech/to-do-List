@@ -1,10 +1,12 @@
 package com.todo.list.model.response;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class ListResponse {
 
     private Long id;

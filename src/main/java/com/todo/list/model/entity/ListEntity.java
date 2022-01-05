@@ -1,9 +1,6 @@
 package com.todo.list.model.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.Where;
 
@@ -12,6 +9,7 @@ import javax.validation.constraints.NotEmpty;
 
 @Getter
 @Setter
+@Builder
 @Table(name = "list")
 @AllArgsConstructor
 @NoArgsConstructor
@@ -26,5 +24,6 @@ public class ListEntity extends AuditableEntity {
 
     @NotEmpty
     private String title;
+
     private Boolean done;
 }
