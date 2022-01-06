@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -15,6 +16,11 @@ import javax.validation.Valid;
 public class ListController {
 
     private final ListService listService;
+
+    @GetMapping
+    public List<ListResponse> getAll() {
+        return listService.getLists();
+    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)

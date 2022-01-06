@@ -1,9 +1,9 @@
--- CREATE lists TABLE
+-- CREATE list TABLE
 
-CREATE TABLE lists
+CREATE TABLE list
 (
 
-    id            int2         NOT NULL,
+    id           int8  NOT NULL GENERATED ALWAYS AS IDENTITY,
     title        VARCHAR(100) NOT NULL,
     created_date  timestamptz(0) NOT NULL DEFAULT NOW(),
     created_by    varchar(100) NULL,

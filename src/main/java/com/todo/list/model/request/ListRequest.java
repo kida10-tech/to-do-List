@@ -7,6 +7,8 @@ import javax.validation.constraints.NotEmpty;
 @Getter
 @Setter
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class ListRequest {
 
     @NotEmpty(message = "Title is mandatory")

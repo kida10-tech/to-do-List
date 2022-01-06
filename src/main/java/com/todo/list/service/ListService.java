@@ -3,6 +3,8 @@ package com.todo.list.service;
 import com.todo.list.model.request.ListRequest;
 import com.todo.list.model.response.ListResponse;
 
+import java.util.List;
+
 public interface ListService {
 
     ListResponse create(ListRequest request);
@@ -11,4 +13,5 @@ public interface ListService {
 
     void delete(Long id);
 
+    List<ListResponse> getLists();
 }

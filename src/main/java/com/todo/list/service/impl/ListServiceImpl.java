@@ -9,6 +9,9 @@ import com.todo.list.service.ListService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @RequiredArgsConstructor
 @Service
 public class ListServiceImpl implements ListService {
@@ -36,6 +39,13 @@ public class ListServiceImpl implements ListService {
     public void delete(Long id) {
         var foundList = listRepository.findById(id).orElseThrow();
         listRepository.delete(foundList);
+    }
+
+    @Override
+    public List<ListResponse> getLists() {
+        return listRepository.findAll().stream()
+                .map(listMapper::toDTO)
+                .collect(Collectors.toList());
     }
 
 }

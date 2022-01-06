@@ -13,7 +13,7 @@ import javax.validation.constraints.NotEmpty;
 @Table(name = "list")
 @AllArgsConstructor
 @NoArgsConstructor
-@SQLDelete(sql = "UPDATE lists SET deleted = true WHERE id=?")
+@SQLDelete(sql = "UPDATE list SET deleted = true WHERE id=?")
 @Where(clause = "deleted = false")
 @Entity
 public class ListEntity extends AuditableEntity {
@@ -25,5 +25,5 @@ public class ListEntity extends AuditableEntity {
     @NotEmpty
     private String title;
 
-    private Boolean done;
+    //private Boolean done;
 }

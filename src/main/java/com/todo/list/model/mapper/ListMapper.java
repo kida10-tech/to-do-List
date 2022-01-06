@@ -20,4 +20,5 @@ public class ListMapper {
                 .title(entity.getTitle())
                 .build();
     }
+
 }
