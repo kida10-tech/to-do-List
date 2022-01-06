@@ -31,6 +31,7 @@ public class ListServiceImpl implements ListService {
     public void update(ListRequest listRequest, Long id) {
         ListEntity foundList = listRepository.findById(id).orElseThrow();
         foundList.setTitle(listRequest.getTitle());
+        foundList.setDone(listRequest.getDone());
         listRepository.save(foundList);
 
     }

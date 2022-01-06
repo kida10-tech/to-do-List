@@ -11,4 +11,5 @@ public class ListResponse {
 
     private Long id;
     private String title;
+    private Boolean done;
 }

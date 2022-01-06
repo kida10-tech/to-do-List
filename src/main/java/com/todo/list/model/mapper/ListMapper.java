@@ -11,6 +11,7 @@ public class ListMapper {
     public ListEntity toEntity(ListRequest dto) {
         return ListEntity.builder()
                 .title(dto.getTitle())
+                .done(dto.getDone())
                 .build();
     }
 
@@ -18,6 +19,7 @@ public class ListMapper {
         return ListResponse.builder()
                 .id(entity.getId())
                 .title(entity.getTitle())
+                .done(entity.getDone())
                 .build();
     }
 

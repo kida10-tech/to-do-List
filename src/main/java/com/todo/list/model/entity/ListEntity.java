@@ -6,6 +6,7 @@ import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
@@ -25,5 +26,6 @@ public class ListEntity extends AuditableEntity {
     @NotEmpty
     private String title;
 
-    //private Boolean done;
+    @NotNull
+    private Boolean done;
 }
