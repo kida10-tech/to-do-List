@@ -14,5 +14,5 @@ public class ListRequest {
     @NotEmpty(message = "Title is mandatory")
     private String title;
 
-    private Boolean done = false;
+    private Boolean done;
 }
