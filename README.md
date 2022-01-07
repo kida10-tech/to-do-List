@@ -4,13 +4,13 @@ To Do List
 
 ## Tech specifications:
 
-PostgreSQL 14.0
-SpringBoot 2.6.2
-Gradle
-Flyway: DB migration
-JWT: Authentication
-Spring Security
-Postman 
+PostgreSQL 14.0,
+SpringBoot 2.6.2,
+Gradle,
+Flyway: DB migration,
+JWT: Authentication,
+Spring Security,
+Postman
 
 ## Register info:
 
